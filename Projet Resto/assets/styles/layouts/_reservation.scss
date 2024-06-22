@@ -1,0 +1,186 @@
+.reservation {
+    background: rgb(37, 37, 37);
+    padding: 80px 0 80px;
+
+    .container {
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 30% 70%; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        width: 65%;
+        margin: 0 auto;
+
+        h3 {
+            color: #956035;
+            font-size: 2.8rem;
+            font-weight: 300;
+        }
+
+        h4 {
+            font-family: "Poppins", sans-serif;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 85%;
+        }
+
+        @media screen and (max-width: 700px) {
+            width: 95%;
+        }
+
+        @media screen and (max-width: 570px) {
+            display: block;
+        }
+        
+        .left { 
+            text-align: center;
+            background: black;
+
+            h3 {
+                height: 40px;
+            }
+
+            h4 {
+            color: whitesmoke;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            }
+
+            .logo-container {
+                margin: 20px 0 30px;
+            }
+
+            h5 {
+                font-family: "Poppins", sans-serif;
+                color: #956035;
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+            p {
+                color: whitesmoke;
+                font-size: 0.9rem;
+                padding: 10px 0 40px;
+            }
+
+            .left-container {
+                border: dashed 1px rgb(194, 194, 194);
+                margin: 25px;
+                padding: 25px 0 25px;
+            }
+
+            @media screen and (max-width: 570px) {
+                padding: 2px 0 2px;
+            }
+        }
+
+        .right { 
+            background: whitesmoke;
+            text-align: center;
+
+            h3 {
+                height: 38px;
+                margin-top: 80px;
+
+                @media screen and (max-width: 570px) {
+                    margin-top: 40px;
+                }
+            }
+
+            h4 {
+                font-size: 2rem;
+            }
+
+            .logo-container {
+                margin: 25px 0 35px;
+
+                img {
+                    width: 4%;
+
+                    @media screen and (max-width: 570px) {
+                        width: 9%;;
+                    }
+                }
+            }
+
+            .formulaire {
+                form {
+                    input,select {
+                        user-select: none;
+                        padding-bottom: 12px;
+                        background: transparent;
+                        outline: none;
+                        border: none;
+                        border-bottom: solid 1px rgb(174, 174, 174);
+                        width: 23%;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        font-family: "Roboto", sans-serif;
+
+                        @media screen and (max-width: 570px) {
+                            width: 70%;
+                            font-size: 0.9rem;
+                            margin-top: 30px;
+                        }
+                    }
+
+                    .div1 {
+                        display: flex;
+                        justify-content: center;
+
+                        @media screen and (max-width: 570px) {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .div2 {
+                        margin: 30px 0 40px;
+                        display: flex;
+                        justify-content: center;
+
+                        @media screen and (max-width: 570px) {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    button {
+                        padding: 12px 30px;
+                        background: black;
+                        border: solid 1px black;
+                        color: whitesmoke;
+                        border-radius: 30px;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 0.9rem;
+                        font-weight: 900;
+                        letter-spacing: 4px;
+                        cursor: pointer;
+                        user-select: none;
+
+                        &:hover {
+                            background: whitesmoke;
+                            color: black;
+                            transform: scale(1.06);
+                            transition: all 0.3s;
+                        }
+
+                        &:active {
+                            transform: scale(1.1);
+                        }
+
+                        @media screen and (max-width: 570px) {
+                            margin-top: 50px;;
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 570px) {
+                padding: 30px 0 30px;
+            }
+        }
+    }
+}
